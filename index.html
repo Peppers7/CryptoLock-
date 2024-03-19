@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+   <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+        <img src="img/Vector.png" alt="">
+    </header>
+    <main class="conteudo">
+        <section class="conteudo_sessao">
+            <div class="conteudo_sessao_entrada_div">
+                <textarea class="conteudo_sessao_entrada" name="" id="entrada" cols="40" rows="5" placeholder="Digite seu texto"></textarea>
+            </div>
+            <div class="conteudo_sessao_divbotao">         
+                <p class="conteudo_sessao_paragrafo">Apenas letras minúsculas e sem acento.</p>
+                <div class="conteudo_sessao_div">
+                    <button type="button" id="criptografar" class="botao" onclick="criptografarTexto()">Criptografar</button>
+                    <button type="button" class="botao" onclick="descriptografar()">Descriptografar</button>
+                </div>
+            </div>
+        </section>
+        <section class="conteudo_sessao2">
+            <div  class="conteudo_sessao_saida_div" id="alterar_background">
+                <textarea class="conteudo_sessao_saida" name="" id="saida" cols="40" rows="5" readonly ></textarea>
+                <img src="/img/text1.png" alt="Titulo mensagem" class="remover_img">
+                <img src="/img/text2.png" alt="Texto mensagem" class="remover_img">
+                <button type="button" class="botao" onclick="copiarTexto()" >Copiar</button>
+            </div>           
+        </section>
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+</html>
