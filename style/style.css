@@ -30,6 +30,7 @@ header{
     align-items: flex-start;
     justify-content: space-between;
     gap: 10rem;
+    overflow-x: hidden;
      
 }
 .conteudo_sessao{
@@ -121,6 +122,7 @@ header{
     background-image:url('/img/1.PNG.png');
     background-repeat: no-repeat;
     background-position-y: 50px;
+    background-size: 100%;
 }
 
 .conteudo_sessao_saida{
@@ -164,33 +166,41 @@ header{
     display: block;
 }
 
-@media screen and (max-width: 1189px){
-    .conteudo{
-        flex-direction: column;
-        align-items: center;
-        gap: 5rem;
-    }
-    .conteudo_sessao{
-        width: 70%;
-    }
-    .conteudo_sessao_entrada{ 
-        font-size: 1.3rem;
-    }
-    
-    .botao{
-        width: 15rem;
-        font-size: 1.2rem;
-        
-    }
-    .conteudo_sessao_paragrafo{
-        font-size: 1.2rem;
-     }
-}
-@media screen and (max-width: 800px){
-    .conteudo_sessao2{
-        height:20.5rem;  
+@media screen and (max-width: 1211px){
+    .remover_img{
+        width: 12rem;
     }
     .conteudo_sessao_saida_div{
-        background: none;       
-     }
+       background-position-y: 150px;
+    }
+}
+
+@media screen and (max-width: 1115px) {
+    body{
+        justify-content: center;
+    }
+
+    .conteudo{  
+        margin-right: 5% ;
+        align-items: center;
+        flex-direction: column;
+        gap: 5rem;
+    }
+    .remover_img{
+        width: 16rem;
+    }
+    .conteudo_sessao2{
+        height: 16rem;
+        width: 40rem;
+    }
+    .conteudo_sessao_saida_div{
+       background: none;
+       height: 100%;
+       width: 100%;
+    }
+}
+@media screen and (max-width: 735px){
+    .conteudo_sessao2{
+        width: 20rem;
+    }
 }
