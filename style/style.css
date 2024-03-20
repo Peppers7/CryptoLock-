@@ -168,7 +168,7 @@ header{
 
 @media screen and (max-width: 1211px){
     .remover_img{
-        width: 12rem;
+        width: 10rem;
     }
     .conteudo_sessao_saida_div{
        background-position-y: 150px;
@@ -181,7 +181,6 @@ header{
     }
 
     .conteudo{  
-        margin-right: 5% ;
         align-items: center;
         flex-direction: column;
         gap: 5rem;
@@ -200,7 +199,28 @@ header{
     }
 }
 @media screen and (max-width: 735px){
+    .conteudo{
+        padding: 0%;
+    }
+    .conteudo_sessao{
+        width: 100%;
+    }
+
+    .botao{
+        width: 7rem;
+        font-size: 13px;
+        cursor: pointer;
+ 
+    }
     .conteudo_sessao2{
-        width: 20rem;
+        width: 23rem;
+    }
+    .conteudo_sessao_saida{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 350px){
+    .conteudo_sessao2{
+        width: 19rem;
     }
 }
