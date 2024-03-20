@@ -14,7 +14,9 @@ function criptografarTexto(){
   let entradacopiada = selecionar.value;
   if(/[A-Z]/.test(entradacopiada) ||  acentosMinusculos.test(entradacopiada) || acentosMaiusculos.test(entradacopiada)){
     alert("Apenas letras minusculas e NADA de acentos!!!");
-  }else{
+  }else if(entradacopiada == ""){
+    alert("Você não forneceu nenhum texto para criptografar.");
+  } else{
     alterarBackground()
     entradacopiada = entradacopiada
     .replaceAll(/e/g, "enter")
